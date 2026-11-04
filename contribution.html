@@ -40,7 +40,7 @@
         }
         const data = await response.json();
         if (data.contributorStudentId) {
-          displayElem.textContent = `Contributor Student ID: ${data.contributorStudentId}`;
+          displayElem.textContent = data.contributorStudentId;
         } else {
           displayElem.textContent = "Error: Invalid JSON structure in contribution.json";
         }
